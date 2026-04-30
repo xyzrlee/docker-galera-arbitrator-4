@@ -9,6 +9,7 @@ RUN chmod +x /entrypoint.sh
 
 RUN apt update && \
     apt install -y galera-arbitrator-4 && \
-    apt clean
+    apt clean && \
+    garbd --version
 
 ENTRYPOINT ["/entrypoint.sh"]
