@@ -1,0 +1,5 @@
+services:
+    udp2raw:
+        build: .
+        image: xyzrlee/galera-arbitrator-4
+        #restart: unless-stopped
